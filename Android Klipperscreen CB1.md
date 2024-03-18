@@ -22,7 +22,8 @@ List of devices attached
 
 If you get an error message about insufficent permissions you should try this step:
 
-Fix error: insufficient permissions for device error
+**Fix error: insufficient permissions for device error**
+
 First step is to stop the running adb server:
 ```
 adb kill-server
