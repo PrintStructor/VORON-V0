@@ -20,6 +20,25 @@ List of devices attached
 
 0b4dca7f	device
 
+If you get an error message about insufficent permissions you should try this step:
+
+Fix error: insufficient permissions for device error
+First step is to stop the running adb server:
+```
+adb kill-server
+```
+Next step is to start the server again but this time with root privileges:
+```
+sudo adb start-server
+```
+The output of this command will be like this:
+```
+abhishek@itsfoss:~$ sudo adb start-server
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+```
+As the last and final step, you must detach the device attached to it and connect it again. That could also create issue and you won't see the impact immediately otherwise.
+
 **Step 5**
 install x11-apps
 ``` 
